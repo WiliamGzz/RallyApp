@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RallyApp</string>
+    <string name="linkSign"><u>Registrarse</u></string>
+
+    <!--Strings login-->
+    <string name="user_successful_registration">Registro exitoso</string>
+    <string name="user_sign_up_failed_data">No se pudo registrar los datos</string>
+    <string name="user_sign_up_failed">No se pudo registrar este usuario</string>
+
+    <!--Strings buttons alert dialog-->
+    <string name="alert_accept">Aceptar</string>
+    <string name="alert_confirm">Confirmar</string>
+    <string name="alert_cancel">Cancelar</string>
+
+    <!--Strings contenido alert dialog-->
+    <string name="alert_connection_title">Sin conexión</string>
+    <string name="alert_connection_content">Verifique su conexión a Internet</string>
+    <string name="alert_confirmation_title">Confirmación</string>
+
+    <!--Strings validation-->
+    <string name="alert_validate_login_content">Ingrese los datos correctamente</string>
+    <string name="alert_validate_field_title">Error en validación</string>
+    <string name="alert_validate_field_empty">Todos los datos son obligatorios</string>
+    <string name="alert_validate_password_pattern">Contraseña. Mínimo 6 caracteres: Incluye mayúsculas, minúsculas y números</string>
+
+    <string name="alert_fail_login">No se pudo iniciar sesión</string>
+    <string name="alert_loading_auth">Autenticando…</string>
+    <string name="alert_loading_process">En proceso…</string>
+
+</resources>

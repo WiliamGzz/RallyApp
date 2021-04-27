@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".DetailMovie"
+    >
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutTopOval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgMovie"
+                        android:maxHeight="180dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/RelativeLayoutTopOval"
+                    android:background="@android:color/white"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_layout"
+                        android:layout_marginStart="@dimen/margin_layout"
+                        >
+                        <TextView
+                            android:id="@+id/txtNombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pelicula: "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/title_buttons"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/txtNombre"
+                            android:textSize="@dimen/title_buttons"
+                            android:textColor="@android:color/black"
+                            android:layout_toRightOf="@+id/txtNombre" />
+
+                        <TextView
+                            android:id="@+id/txtAño"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Año: "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/title_buttons"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/txtAño"
+                            android:layout_below="@+id/txtName"
+                            android:textSize="@dimen/title_buttons"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/txtAño" />
+
+                        <TextView
+                            android:id="@+id/txtCategoria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Categoria: "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/title_buttons"
+                            android:layout_below="@+id/txtAge"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/txtCategoria"
+                            android:layout_below="@+id/txtAge"
+                            android:textSize="@dimen/title_buttons"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/txtCategoria" />
+
+                        <TextView
+                            android:id="@+id/txtClasificacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Clasificación: "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/title_buttons"
+                            android:layout_below="@+id/txtCategory"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtClasification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/txtClasificacion"
+                            android:layout_below="@+id/txtCategory"
+                            android:textSize="@dimen/title_buttons"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/txtClasificacion" />
+
+                        <TextView
+                            android:id="@+id/txtDescripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Descripción: "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/title_buttons"
+                            android:layout_below="@+id/txtClasification"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDescripcion"
+                            android:textSize="@dimen/title_buttons"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <Button
+                            android:id="@+id/btnFunctions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ver Funciones"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/btn_redondo_black"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/title_buttons"
+                            android:layout_below="@id/txtDescription"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="40dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

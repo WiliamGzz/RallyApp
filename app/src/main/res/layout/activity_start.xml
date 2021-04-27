@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Start">
+
+    <ImageView
+        android:src="@drawable/ic_logo_raly"
+        android:maxHeight="250dp"
+        android:maxWidth="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        >
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_redondo_black"
+            android:textAllCaps="false"
+            android:textSize="@dimen/title_buttons"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registarse"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_redondo_white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/title_buttons"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnSignIn"
+            />
+
+        <!--<TextView
+            android:id="@+id/txtLinkForgotten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linkSign"
+            android:textColor="@android:color/black"
+            android:autoLink="all"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_below="@+id/btnSignIn"
+           />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>
