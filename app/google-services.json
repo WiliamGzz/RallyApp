@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "241271931759",
+    "firebase_url": "https://rally-mty-default-rtdb.firebaseio.com",
+    "project_id": "rally-mty",
+    "storage_bucket": "rally-mty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241271931759:android:200393e4858c8266d19e9a",
+        "android_client_info": {
+          "package_name": "com.example.rallyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241271931759-38hcfd5oqjm6d8fqojiv76sdtnc34mve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPP3ApvGxk53nom05nYwWBFRbtDnItUhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241271931759-38hcfd5oqjm6d8fqojiv76sdtnc34mve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

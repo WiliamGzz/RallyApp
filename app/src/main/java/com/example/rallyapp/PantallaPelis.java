@@ -12,3 +12,5 @@ public class PantallaPelis extends AppCompatActivity {
         setContentView(R.layout.activity_pantalla_pelis);
     }
 }
+
+
