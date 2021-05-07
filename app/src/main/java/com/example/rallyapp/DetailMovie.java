@@ -75,7 +75,8 @@ public class DetailMovie extends AppCompatActivity {
                 txtCategory.setText(category);
                 txtClasification.setText(clasification);
                 txtDescription.setText(description);
-                Picasso.with(getApplicationContext()).load(image).into(imgMovie);
+                // Picasso.with(getApplicationContext()).load(image).into(imgMovie);
+                Picasso.get().load(image).into(imgMovie);
 
 
             }

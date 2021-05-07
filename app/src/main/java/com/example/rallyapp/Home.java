@@ -90,7 +90,9 @@ public class Home extends AppCompatActivity {
         }
         public void setImage (Context ctx, String image) {
             ImageView input_image = (ImageView) view.findViewById(R.id.imgMovie);
-            Picasso.with(ctx).load(image).into(input_image);
+            // Picasso.with(ctx).load(image).into(input_image);
+            Picasso.get().load(image).into(input_image);
+
         }
     }
 
