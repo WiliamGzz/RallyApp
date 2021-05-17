@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:orientation="vertical"
-        android:background="@android:color/black">
+        android:background="@android:color/holo_blue_light">
         <ImageView
             android:id="@+id/imgMovie"
             android:layout_width="match_parent"
