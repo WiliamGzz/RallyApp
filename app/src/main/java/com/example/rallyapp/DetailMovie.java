@@ -91,7 +91,7 @@ public class DetailMovie extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (DetailMovie.this.connection_internet()) {
-                    final SweetAlertDialog fail = new SweetAlertDialog(DetailMovie.this, SweetAlertDialog.ERROR_TYPE);
+                   /* final SweetAlertDialog fail = new SweetAlertDialog(DetailMovie.this, SweetAlertDialog.ERROR_TYPE);
                     fail.setTitleText("¿Quieres reservar?");
                     fail.setContentText("Primero codifícalo");
                     fail.setConfirmText(getString(R.string.alert_accept));
@@ -104,7 +104,10 @@ public class DetailMovie extends AppCompatActivity {
                             // DetailMovie.this.onBackPressed();
                             fail.dismiss();
                         }
-                    });
+                    });*/
+
+                    Intent intent = new Intent(getApplicationContext(), activity_rowsSala.class);
+                    startActivity(intent);
                 }
             }
         });
