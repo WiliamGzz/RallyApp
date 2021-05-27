@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
-        <activity android:name=".ventana_reservacion"></activity>
+        <activity android:name=".SiCupo"></activity>
+        <activity android:name=".ventana_reservacion" />
         <activity android:name=".activity_seats" />
         <activity android:name=".activity_rowsSala" /> <!-- android:theme="@style/AppTheme" -->
         <activity android:name=".Start">

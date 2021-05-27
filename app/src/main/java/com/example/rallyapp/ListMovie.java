@@ -12,15 +12,17 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class ListMovie {
 
-    private String title, description, image, age, category, clasification;
+    private String title, description, image, age, category, clasification, trailer, duracion;
 
-    public ListMovie(String title, String description, String image, String age, String category, String clasification) {
+    public ListMovie(String title, String description, String image, String age, String category, String clasification, String trailer, String duracion) {
         this.title = title;
         this.description = description;
         this.image = image;
         this.age = age;
         this.category = category;
         this.clasification = clasification;
+        this.trailer = trailer;
+        this.duracion = duracion;
     }
 
     public String getTitle() {
@@ -69,6 +71,22 @@ public class ListMovie {
 
     public void setClasification(String clasification) {
         this.clasification = clasification;
+    }
+
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
     }
 
     public ListMovie() {

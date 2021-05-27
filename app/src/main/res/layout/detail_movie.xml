@@ -58,7 +58,7 @@
                             android:id="@+id/txtNombre"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pelicula: "
+                            android:text="Duracion: "
                             android:textColor="@android:color/black"
                             android:textSize="@dimen/title_buttons"
                             />
@@ -98,7 +98,7 @@
                             android:id="@+id/txtCategoria"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Categoria: "
+                            android:text="Trailer: "
                             android:textColor="@android:color/black"
                             android:textSize="@dimen/title_buttons"
                             android:layout_below="@+id/txtAge"
@@ -163,14 +163,29 @@
                             android:id="@+id/btnFunctions"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Ver Funciones"
-                            android:textColor="@android:color/white"
-                            android:background="@drawable/btn_redondo_black"
-                            android:textAllCaps="false"
-                            android:textSize="@dimen/title_buttons"
                             android:layout_below="@id/txtDescription"
                             android:layout_marginTop="40dp"
-                            android:layout_marginBottom="40dp"/>
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/btn_redondo_black"
+                            android:onClick="Salas"
+                            android:text="8pm"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/title_buttons" />
+
+                        <Button
+                            android:id="@+id/btnFunctions2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnFunctions"
+                            android:layout_marginTop="1sp"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/btn_redondo_black"
+                            android:onClick="Salas"
+                            android:text="10pm"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/title_buttons" />
 
 
 

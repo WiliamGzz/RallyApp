@@ -46,7 +46,7 @@ public class Home extends AppCompatActivity {
             @Override
             protected void populateViewHolder(final ListMovieViewHolder listMovieViewHolder, final ListMovie listMovie, final int i) {
                 listMovieViewHolder.setTitle(listMovie.getTitle());
-                listMovieViewHolder.setDescription(listMovie.getDescription());
+                listMovieViewHolder.setCategory(listMovie.getCategory());
                 listMovieViewHolder.setImage(getApplicationContext(), listMovie.getImage());
 
                 listMovieViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -84,9 +84,9 @@ public class Home extends AppCompatActivity {
             input_title.setText(title);
         }
 
-        public void setDescription (String description) {
-            TextView input_description = (TextView) view.findViewById(R.id.movieDescription);
-            input_description.setText(description);
+        public void setCategory (String categoria) {
+            TextView input_categoria = (TextView) view.findViewById(R.id.movieCategoria);
+            input_categoria.setText(categoria);
         }
         public void setImage (Context ctx, String image) {
             ImageView input_image = (ImageView) view.findViewById(R.id.imgMovie);

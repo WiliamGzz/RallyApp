@@ -29,10 +29,10 @@
             android:textColor="@android:color/white"/>
 
         <TextView
-            android:id="@+id/movieDescription"
+            android:id="@+id/movieCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Descripción"
+            android:text="Categoria"
             android:textSize="15sp"
             android:textColor="@android:color/white"/>
 

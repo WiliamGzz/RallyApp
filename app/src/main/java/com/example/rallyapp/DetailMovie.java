@@ -25,22 +25,23 @@ public class DetailMovie extends AppCompatActivity {
     private FirebaseDatabase db;
     private DatabaseReference moviesRef;
     // Variables para detalles de pelicula
-    private TextView txtName, txtDescription, txtAge, txtCategory, txtClasification;
+    private TextView txtDescription, txtAge, txtTrailer, txtClasification, txtDuracion;
     private ImageView imgMovie;
-    private Button btnFunctions;
+    private Button btnFunctions, btnFunctions2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_movie);
 
-        txtName = (TextView) findViewById(R.id.txtName);
         txtDescription = (TextView) findViewById(R.id.txtDescription);
         txtAge = (TextView) findViewById(R.id.txtAge);
-        txtCategory = (TextView) findViewById(R.id.txtCategory);
+        txtTrailer = (TextView) findViewById(R.id.txtCategory);
         txtClasification = (TextView) findViewById(R.id.txtClasification);
+        txtDuracion = (TextView) findViewById(R.id.txtName);
         imgMovie = (ImageView) findViewById(R.id.imgMovie);
         btnFunctions = (Button) findViewById(R.id.btnFunctions);
+        btnFunctions2 = (Button) findViewById(R.id.btnFunctions2);
 
         db = FirebaseDatabase.getInstance();
 
@@ -59,6 +60,8 @@ public class DetailMovie extends AppCompatActivity {
                 String image = movie.getImage();
                 String clasification = movie.getClasification();
                 String category = movie.getCategory();
+                String duracion = movie.getDuracion();
+                String trailer = movie.getTrailer();
                 //Obteniendo el movie id
                 String uid = dataSnapshot.getKey();
                 System.out.println("DATA: ");
@@ -68,13 +71,15 @@ public class DetailMovie extends AppCompatActivity {
                 System.out.println(image);
                 System.out.println(category);
                 System.out.println(clasification);
+                System.out.println(duracion);
+                System.out.println(trailer);
                 System.out.println(uid);
                 //puedes hacer lo que quieras con los datos
-                txtName.setText(title);
                 txtAge.setText(age);
-                txtCategory.setText(category);
                 txtClasification.setText(clasification);
                 txtDescription.setText(description);
+                txtDuracion.setText(duracion);
+                txtTrailer.setText(trailer);
                 // Picasso.with(getApplicationContext()).load(image).into(imgMovie);
                 Picasso.get().load(image).into(imgMovie);
 
@@ -106,7 +111,31 @@ public class DetailMovie extends AppCompatActivity {
                         }
                     });*/
 
-                    Intent intent = new Intent(getApplicationContext(), activity_rowsSala.class);
+                    Intent intent = new Intent(getApplicationContext(), SiCupo.class);
+                    startActivity(intent);
+                }
+            }
+        });
+        btnFunctions2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (DetailMovie.this.connection_internet()) {
+                   /* final SweetAlertDialog fail = new SweetAlertDialog(DetailMovie.this, SweetAlertDialog.ERROR_TYPE);
+                    fail.setTitleText("¿Quieres reservar?");
+                    fail.setContentText("Primero codifícalo");
+                    fail.setConfirmText(getString(R.string.alert_accept));
+                    fail.setCancelable(false);
+                    fail.show();
+                    fail.getButton(SweetAlertDialog.BUTTON_CONFIRM).setBackground(getResources().getDrawable(R.drawable.gray_button_background));
+                    fail.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                        @Override
+                        public void onClick(SweetAlertDialog sweetAlertDialog) {
+                            // DetailMovie.this.onBackPressed();
+                            fail.dismiss();
+                        }
+                    });*/
+
+                    Intent intent = new Intent(getApplicationContext(), SiCupo.class);
                     startActivity(intent);
                 }
             }
@@ -140,6 +169,12 @@ public class DetailMovie extends AppCompatActivity {
             });
         }
         return res;
+    }
+    public void Salas (View view)
+    {
+        Intent salas = new Intent (this, activity_seats.class);
+        // Comentario para git
+        startActivity(salas);
     }
 
 }
